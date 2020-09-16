@@ -1,0 +1,9 @@
+n ,m = map(int,input().split(' '))  
+for i in range(n):
+    p = '.|.'  # p is pattern
+    if i < (n-1)/2:
+        print((p*(2*i+1)).center(m,'-'))
+    elif i == (n-1)/2:
+        print(('WELCOME').center(m,'-'))
+    else:
+        print((p*(2*(n-i-1)+1)).center(m,'-'))
